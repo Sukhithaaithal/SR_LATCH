@@ -15,9 +15,7 @@ package tb_pkg;
  `include "sr_env.sv"                  // environment class
 
  `include "sr_test.sv"                   // test1
- //`include "test2.sv"
- //`include "test3.sv"
-
+ 
 endpackage
 `endif 
 

@@ -6,10 +6,10 @@ class sr_coverage extends uvm_subscriber #(sr_sequence_item);
   //----------------------------------------------------------------------------
 
   //----------------------------------------------------------------------------
-  function new(string name="sr_coverage",uvm_component parent);
-    super.new(name,parent);
-    dut_cov=new();
-  endfunction
+//  function new(string name="sr_coverage",uvm_component parent);
+  //  super.new(name,parent);
+    //dut_cov=new();
+ // endfunction
   //----------------------------------------------------------------------------
 
   //----------------------------------------------------------------------------
@@ -38,6 +38,10 @@ class sr_coverage extends uvm_subscriber #(sr_sequence_item);
   endgroup:dut_cov;
 
   //----------------------------------------------------------------------------
+function new(string name="sr_coverage",uvm_component parent);
+super.new(name,parent);
+dut_cov=new();
+endfunction
 
   //---------------------  write method ----------------------------------------
   function void write(sr_sequence_item t);

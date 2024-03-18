@@ -1,3 +1,4 @@
+
 module sr(s,r,q,qbar);
 	input s;
 	input r;
@@ -22,4 +23,6 @@ module sr(s,r,q,qbar);
 			qbar <= ~q;
 		end
 	end
-endmodule : sr
+endmodule
+
+
